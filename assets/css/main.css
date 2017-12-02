@@ -1,0 +1,10 @@
+.bground{
+	background-color: #EEEEEEFF;
+	margin-top: 6%;
+	border-radius: 1em;
+	padding: 6%;
+}
+
+.button{
+	border-bottom: 0.1em solid #EEE;
+}
