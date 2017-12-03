@@ -5,63 +5,360 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Theme Bootstrap</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Aqui iría mi main.css si usara mis estilos -->
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <div class="container-fluid">
-  <section class="barra">
-    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
-        </div>
+  <div class="container">
+    <section class="barra">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap theme</a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-  </section>
-  </div>
-  <header>
-    <div class="container">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </section>
+    <header>
       <div class="row">
-        <div class="col-md-12 bground">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="col-md-12 jumbotron">
           <h1><b>The Example</b></h1>
-          <h3>This is a template showcasing the optional the stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</h3>
+          <p>This is a template showcasing the optional the stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
         </div>
       </div>
+    </header>
+
+    <section id="buttons">
       <div class="row">
-        <div class="col-md-12 button">
-          <h2>Buttons</h2>
+        <div class="col-md-12 page-header">
+          <h1>Buttons</h1>
+        </div>
+        <p>
+          <!-- la clase btn-lg para botones grandes -->
+          <input type="button" class="btn btn-lg btn-Default" value="Default">
+          <input type="button" class="btn btn-lg btn-Primary" value="Primary">
+          <input type="button" class="btn btn-lg btn-Success" value="Success">
+          <input type="button" class="btn btn-lg btn-Info" value="Info">
+          <input type="button" class="btn btn-lg btn-Warning" value="Warning">
+          <input type="button" class="btn btn-lg btn-Danger" value="Danger">
+          <input type="button" class="btn btn-lg btn-Link" value="Link">
+        </p>
+        <p>
+          <!-- sin clase btn-lg/btn-sm/btn-xs para botones por defecto -->
+          <input type="button" class="btn btn-Default" value="Default">
+          <input type="button" class="btn btn-Primary" value="Primary">
+          <input type="button" class="btn btn-Success" value="Success">
+          <input type="button" class="btn btn-Info" value="Info">
+          <input type="button" class="btn btn-Warning" value="Warning">
+          <input type="button" class="btn btn-Danger" value="Danger">
+          <input type="button" class="btn btn-Link" value="Link">
+        </p>
+        <p>
+          <!-- la clase btn-sm para botones de tamaño small -->
+          <input type="button" class="btn btn-sm btn-Default" value="Default">
+          <input type="button" class="btn btn-sm btn-Primary" value="Primary">
+          <input type="button" class="btn btn-sm btn-Success" value="Success">
+          <input type="button" class="btn btn-sm btn-Info" value="Info">
+          <input type="button" class="btn btn-sm btn-Warning" value="Warning">
+          <input type="button" class="btn btn-sm btn-Danger" value="Danger">
+          <input type="button" class="btn btn-sm btn-Link" value="Link">
+        </p>
+        <p>
+          <!-- la clase btn-xs para botones de tamaño super small-->
+          <input type="button" class="btn btn-xs btn-Default" value="Default">
+          <input type="button" class="btn btn-xs btn-Primary" value="Primary">
+          <input type="button" class="btn btn-xs btn-Success" value="Success">
+          <input type="button" class="btn btn-xs btn-Info" value="Info">
+          <input type="button" class="btn btn-xs btn-Warning" value="Warning">
+          <input type="button" class="btn btn-xs btn-Danger" value="Danger">
+          <input type="button" class="btn btn-xs btn-Link" value="Link">
+        </p>
+      </div>
+    </section>
+    <section id="tables">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Tables</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Ejemplo tabla basica -->
+            <table class="table">
+              <!-- la etiqueta thead contiene a un bloque de filas (tr) que representa a la sección de encabezado de una tabla. -->
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <!-- La etiqueta tbody contiene las celdas regulares en la sección del cuerpo -->
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+          </table>
+          </div>
+          <div class="col-md-6">
+            <!-- con clase table-striped para hacer tablas cebreadas, para que alternen su color de fondo -->
+            <table class="table table-striped">
+               <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <!-- La etiqueta tbody contiene las celdas regulares en la sección del cuerpo -->
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- table-bordered para tabla con bordes -->
+            <table class="table table-bordered">
+              <!-- la etiqueta thead contiene a un bloque de filas (tr) que representa a la sección de encabezado de una tabla. -->
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <!-- La etiqueta tbody contiene las celdas regulares en la sección del cuerpo -->
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+          </table>
+          </div>
+          <div class="col-md-6">
+            <!-- con clase table-condensed para hacer tablas condensadas -->
+            <table class="table table-condensed">
+               <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <!-- La etiqueta tbody contiene las celdas regulares en la sección del cuerpo -->
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <!-- colspan=2 para que ocupe 2 columnas --> 
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-
-
+    </section>
+    <section id="thumbnails">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Thumbnails</h1>
+        </div>
+        <!-- la clase img-thumbnail para que lo deje como una miniatura -->
+        <img class="img-thumbnail" src="assets/img/200x200.svg" alt="Aquí va la foto">
+      </div>      
+    </section>
+    <section id="labels">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Labels</h1>
+        </div>
+        <!-- span con clase label y label-suRespectivaPropiedad para darle estilo distinto -->
+        <h1>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>
+        </h1>
+        <h2>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>          
+        </h2>
+        <h3>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>
+        </h3>
+        <h4>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>
+        </h4>
+        <h5>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>
+        </h5>
+        <h6>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>
+        </h6>
+        <p>
+          <span class="label label-Default">Default</span>
+          <span class="label label-Primary">Primary</span>
+          <span class="label label-Success">Success</span>
+          <span class="label label-Info">Info</span>
+          <span class="label label-Warning">Warning</span>
+          <span class="label label-Danger">Danger</span>
+        </p>
+      </div>      
+    </section>
+    <section id="badges">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Badges</h1>
+        </div>
+      </div>      
+    </section>
+    <section id="dropdown-menus">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Dropdown menus</h1>
+        </div>
+      </div>      
+    </section>
+    <section id="navs">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Navs</h1>
+        </div>
+      </div>      
+    </section>
+    <section id="navbars">
+      <div class="row">
+        <div class="col-md-12 page-header">
+          <h1>Navbars</h1>
+        </div>
+      </div>      
+    </section>
+  </div>
+  
+  <!-- Primero jquery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Después bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
