@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<!-- Aqui iría mi main.css si usara mis estilos -->
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -204,10 +203,15 @@
               <!-- La etiqueta tbody contiene las celdas regulares en la sección del cuerpo -->
               <tbody>
                 <tr>
-                  <td>1</td>
+                  <td rowspan="2">1</td>
                   <td>Mark</td>
                   <td>Otto</td>
                   <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@TwBootstrap</td>
                 </tr>
                 <tr>
                   <td>2</td>
@@ -217,8 +221,7 @@
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
+                  <td colspan="2">Larry the Bird</td>
                   <td>@twitter</td>
                 </tr>
               </tbody>
